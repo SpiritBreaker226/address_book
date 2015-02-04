@@ -1,0 +1,19 @@
+<h1>
+	<%= @contact.first_name %> <%= @contact.last_name %>
+</h1>
+
+<%= link_to("Back To Home", contacts_path) %>
+<br><br>
+<%= image_tag(@contact.picture_url) %>
+<br><br>
+<address>
+	<%= @contact.address %>
+</address>
+<br>
+Phone <%= link_to(@contact.phone, "tel:#{@contact.phone}") %>
+<br><br>
+Email <%= link_to(@contact.email, "tel:#{@contact.email}") %>
+<br><br>
+Age: <%= @contact.age %>
+<br><br>
+Birthday: <%= @contact.birthday %>

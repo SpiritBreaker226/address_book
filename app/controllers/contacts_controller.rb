@@ -13,6 +13,10 @@ class ContactsController < ApplicationController
 		@contact.save ? redirect_to(contacts_url) : :new
 	end
 
+	def show
+		@contact = Contact.find(params[:id])
+	end
+
 	private
 
 	def contact_pararm
