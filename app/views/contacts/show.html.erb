@@ -2,7 +2,7 @@
 	<%= @contact.first_name %> <%= @contact.last_name %>
 </h1>
 
-<%= link_to("Back To Home", contacts_path) %> | <%= link_to("Edit", edit_contact_path) %>
+<%= link_to("Back To Home", contacts_path) %> | <%= link_to("Edit", edit_contact_path) %> | <%= link_to("Delete", @contact, method: :delete, data: {confirm: "Are you sure you want to delete #{@contact.first_name} #{@contact.last_name}?"}) %>
 <br><br>
 <%= image_tag(@contact.picture_url) %>
 <br><br>
