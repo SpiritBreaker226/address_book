@@ -22,5 +22,5 @@ test:
 
 production:
   adapter: postgresql
-	database: address_book
+	database: jstats-address-book
 	host: localhost
