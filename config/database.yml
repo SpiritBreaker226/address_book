@@ -22,6 +22,6 @@ test:
 
 production:
   adapter: postgresql
-	database: addressbook
-	host: localhost
+  database: addressbook
+  host: localhost
 
